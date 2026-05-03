@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════════ */
 
 // ─── CONFIG ─────────────────────────────────────────────────────
-const BACKEND_URL = 'http://localhost:3000'; // Change to your backend URL
+const BACKEND_URL = 'https://shuvo-backend.onrender.com'; // Change to your backend URL
 const MAX_CHARS = 500;
 const STORAGE_KEY_MESSAGES = 'shuvo_sa_messages';
 const STORAGE_KEY_USER_ID   = 'shuvo_sa_user_id';
