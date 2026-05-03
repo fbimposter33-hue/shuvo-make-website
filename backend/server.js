@@ -64,12 +64,16 @@ app.post('/chat', async (req, res) => {
 
     // Safely extract reply — adapt to actual API response shape
     const reply =
-      data?.choices?.[0]?.message?.content ||
-      data?.message ||
-      data?.reply ||
-      data?.response ||
-      data?.content ||
-      null;
+  data?.answer ||                          // ✅ এটাই আসল fix
+  data?.choices?.[0]?.message?.content ||
+  data?.choices?.[0]?.text ||
+  data?.message?.content ||
+  data?.message ||
+  data?.reply ||
+  data?.response ||
+  data?.content ||
+  data?.text ||
+  null;
 
     if (!reply) {
       console.error('Unexpected API response shape:', JSON.stringify(data));
