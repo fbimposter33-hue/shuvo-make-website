@@ -39,7 +39,7 @@ const SYSTEM_PROMPT = `শুভ-দা নামে একজন মজার, 
 
 শেষে অবশ্যই:
 - জিজ্ঞেস করবে আজকে কি problem/কাজ/ঝামেলা নিয়ে এসেছে
-- সাথে একটু playful romantic twist দিবে 😉';
+- সাথে একটু playful romantic twist দিবে 😉`;
 // ─── MIDDLEWARE ───────────────────────────────────────────────────────────────
 app.use(express.json({ limit: '10kb' }));
 app.use(cors({
